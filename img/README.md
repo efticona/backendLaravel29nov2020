@@ -26,6 +26,11 @@ CLIENT-SIDE:
 SERVER-SIDE:
 6LfjdPEZAAAAAPo-TA0-h-RC5QvZvKBFsG0wMppb
 
+Agregar dominio local:
+
+![](2020-11-28-20-25-52.png)
+
+
 ## ERROR
 
 GuzzleHttp\Exception\RequestException
@@ -42,3 +47,5 @@ Ej: curl.cainfo = C:\php72\cacert.pem
 
 https://xpertphp.com/laravel-6-google-v2-recaptcha-form-validation-example-tutorial/
 https://www.tutsmake.com/laravel-7-6-google-v2-recaptcha-form-validation-example/
+https://medium.com/@samuelhenshaw2020/recaptcha-v2-in-angular-8-with-back-end-verification-with-nodejs-9574f297fdef
+https://javorovic.com/blog/add-google-recaptcha-php-laravel

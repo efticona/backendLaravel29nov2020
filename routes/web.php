@@ -15,7 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('student', 'StudentController@index');
-Route::post('student', 'StudentController@save')->name('student.save');
-
-
+Route::get('captcha-form', 'CaptchaController@captchaForm');
+Route::post('store-captcha-form', 'CaptchaController@storeCaptchaForm');
