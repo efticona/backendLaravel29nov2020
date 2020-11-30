@@ -17,3 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('token_validate', 'CaptchaController@storeCaptchaForm2');
+Route::post('sendmails', 'MailSend@mailsendApi');

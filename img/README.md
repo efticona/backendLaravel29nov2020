@@ -43,6 +43,7 @@ Add the following line to php.ini:
 curl.cainfo="/path/to/downloaded/cacert.pem"
 Ej: curl.cainfo = C:\php72\cacert.pem
 
+
 ## REFERENCIAS
 
 https://xpertphp.com/laravel-6-google-v2-recaptcha-form-validation-example-tutorial/

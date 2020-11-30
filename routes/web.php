@@ -17,3 +17,18 @@ Route::get('/', function () {
 
 Route::get('captcha-form', 'CaptchaController@captchaForm');
 Route::post('store-captcha-form', 'CaptchaController@storeCaptchaForm');
+
+Route::get('send-mail', function () {
+   
+    $details = [
+        'title' => 'Mail from faviotic.com',
+        'body' => 'This is for testing email using smtp'
+    ];
+   
+    \Mail::to('ericfavioticona@gmail.com')->send(new \App\Mail\MyTestMail($details));
+   
+    dd("Email is Sent.");
+});
+
+Route::get('sendmail', 'MailSend@mailsend');
+
