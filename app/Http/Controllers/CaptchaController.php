@@ -47,8 +47,7 @@ class CaptchaController extends Controller
             "secret=" . $secret . "&response=" . $recaptchas
         );
 
-
-
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $result = curl_exec($ch);
@@ -57,12 +56,11 @@ class CaptchaController extends Controller
 
         curl_close($ch);
 
-        //dd($responseData);
 
         if ($responseData['success'] == false) {
             dd("no valido");
             return back();
-           
+
         } else {
             dd("verificado con exito");
         }
