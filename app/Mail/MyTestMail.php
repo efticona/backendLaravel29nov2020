@@ -28,7 +28,7 @@ class MyTestMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Mail from faviotic.com')
+        return $this->subject('OEP-CODIGO DE VERIFICACIÓN')
                     ->view('emails.myTestMail');
     }
 }
